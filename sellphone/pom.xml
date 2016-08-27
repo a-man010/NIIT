@@ -5,15 +5,21 @@
   <artifactId>sellphone</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>chaklea Maven Webapp</name>
+  <name>sellphone Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-   <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>4.3.2.RELEASE</version>
-</dependency>
-
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+     <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.0</version>
+        <scope>provided</scope>
+    </dependency>
   <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>servlet-api</artifactId>
@@ -33,21 +39,6 @@
     <version>1.4.191</version>
 </dependency>
 
-
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>6.0.3</version>
-</dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    
-    
     <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -84,7 +75,7 @@
     <artifactId>spring-jdbc</artifactId>
     <version>4.3.1.RELEASE</version>
 </dependency>
-
+    
   </dependencies>
   <build>
     <finalName>sellphone</finalName>
