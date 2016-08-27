@@ -7,29 +7,20 @@
 <title>SellPhoneHome</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Quick Search</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style_carousel.css" rel="stylesheet">
-<link
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-	rel="stylesheet">
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<link rel="stylesheet"
-	href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
-</style>
-<script type="text/javascript"
-	src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript"
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="media/modalsignin.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+  
+  <link rel="stylesheet" type="text/css" href="media/modalsignin.css">
 </head>
 
 <body>
@@ -90,16 +81,16 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="/WEB-INF/views/media/htc.jpg" alt="HTC"
+					<img src="media/htc.jpg" alt="HTC"
 						class="img-responsive">
 				</div>
 
 				<div class="item">
-					<img src="/media/lg.jpg" alt="LG" class="img-responsive">
+					<img src="media/lg.jpg" alt="LG" class="img-responsive">
 				</div>
 
 				<div class="item">
-					<img src="/media/nexus.jpg" alt="Huawei" class="img-responsive">
+					<img src="media/nexus.jpg" alt="Huawei" class="img-responsive">
 				</div>
 			</div>
 
@@ -122,13 +113,13 @@
 
 	<div class="row">
 		<div class="col-md-7">
-			<a href="/media/s7.jpg" class="thumbnail"> <img
-				src="${pageContext.request.contextPath}/media/s7.jpg" alt="" style="width: 1000px; height: 400px">
+			<a href="#" class="thumbnail"> <img
+				src="media/s7.jpg" alt="" style="width: 1000px; height: 400px">
 			</a>
 		</div>
 		<div class="col-md-5">
 			<a href="#" class="thumbnail"> <img
-				src="/media/5x.jpg" alt=""
+				src="media/s7_2.jpg" alt=""
 				style="width: 900px; height: 400px">
 			</a>
 		</div>
@@ -140,7 +131,7 @@
 		
 		<form class="modal-content animate" action="#">
 			
-			<div class="container-fluid">
+			<div class="container-fluid"><br>
 				<label><b>Username</b></label> <input type="text"
 					placeholder="Enter Username" name="uname" required> <label><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw"
@@ -149,12 +140,12 @@
 				<button type="submit">Login</button>
 				<input type="checkbox" checked="checked"> Remember me
 			</div>
-
+				<br>
 			<div class="container-fluid" style="background-color: #f1f1f1">
 				<button type="button"
 					onclick="document.getElementById('id01').style.display='none'"
-					class="cancelbtn">Cancel</button>
-				<span class="psw pull-right" align="center"><a href="#">Forgot
+					class="cancelbtn" align="center">Cancel</button>
+				<span class="psw pull-right"><a href="#">Forgot
 						password?</a></span>
 			</div>
 		</form>
